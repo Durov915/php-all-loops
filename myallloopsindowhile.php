@@ -3,299 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loop</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        div {
-            background-color: black;
-            height: 20px;
-            width: 20px;
-            display: inline-block;
-            border: 5px solid cyan;
-            border-radius:10px 0px 10px 0px;
-            animation: mymove 2s infinite;
-        }
-
-        @keyframes mymove {
-            from {transform: rotate(0deg)}
-            to {transform: rotate(360deg)}
-        }
-
-        table td {
-            border: 5px solid red;
-            padding: 5px;
-        }
-    </style>
+    <title>do while loops</title>
 </head>
 <body>
-    <table border="0" cellspacing="10">
+    <table border="1" cellspacing="0" cellpadding="20" >
         <tr>
             <td>
-                <h1>
                 <?php
-                $a = 1;
-                do {
-                    $b = 1;
-                    do {
+                $a=1;
+                do{
+                    $b=1;
+                    do{
                         echo $b;
                         $b++;
-                    } while ($b <= $a);
-                    echo "<br>";
+                    }
+                    while($b<=$a);
+                    echo"<br>";
                     $a++;
-                } while ($a <= 5);
+                }
+                while($a<=5);
+                
                 ?>
-                </h1>
             </td>
 
             <td>
-                <h1>
                 <?php
-                $a = 1;
-                do {
-                    $b = 1;
-                    do {
+                  $a=1;
+                  do{
+                    $b=1;
+                    do{
                         echo $a;
                         $b++;
-                    } while ($b <= $a);
-                    echo "<br>";
+
+                        
+                    }
+                    while($b<=$a);
                     $a++;
-                } while ($a <= 5);
+                    echo"<br>";
+                  }
+                  while($a<=5);
                 ?>
-                </h1>
             </td>
 
             <td>
-                <h1>
                 <?php
-                $a = 1;
-                do {
-                    $b = 1;
-                    do {
-                        echo "<div></div> ";
+                $a=1;
+                do{
+                    $b=1;
+                    do{
+                     echo"*";
+                     $b++;         
+                    }
+                    while($b<=$a);
+                    echo"<br>";
+                    $a++;
+                }          
+                while($a<=5);
+
+                ?>
+            </td>
+            <td>
+                <?php
+                $n=1;
+                $a=1;
+                do{
+                    $b=1;
+                    do{
+                       echo $n++;
+                        // echo $n."";
                         $b++;
-                    } while ($b <= $a);
-                    echo "<br>";
+                     
+                    }
+                    while($b<=$a);
+                    echo"<br>";
                     $a++;
-                } while ($a <= 5);
-                ?>
-                </h1>
+
+                }
+                while($a<=5);
+            ?>
             </td>
 
             <td>
-                <h1>
                 <?php
-                $n = 1;
-                $a = 1;
-                do {
-                    $b = 1;
-                    do {
-                        echo $n++;
-                        $b++;
-                    } while ($b <= $a);
-                    echo "<br>";
-                    $a++;
-                } while ($a <= 5);
-                ?>
-                </h1>
-            </td>
-
-            <td>
-                <h1>
-                <?php
-                $a = 65;
-                do {
-                    $b = 65;
-                    do {
+                 $a=65;
+                 do{
+                    $b=65;
+                    do{
                         echo "".chr($b);
                         $b++;
-                    } while ($b <= $a);
-                    echo "<br>";
+                    }
+                     while($b<=$a);
+                     $a++;
+                     echo"<br>";
+                 }
+                 while($a<=70);
+                ?>
+            </td>
+            <td>
+                <?php
+                  $a=5;
+                  do{
+                    $b=1;
+                    do{
+                      echo"$b";
+                      $b++;
+                    }
+                    while($b<=$a);
+                      echo"<br>";
+                      $a--;
+                    
+                    
+                  }
+                  while($a>=1);
+                ?>
+            </td>
+            <td>
+                <?php
+              
+                $a=1;
+                do{
+                    $b=1;
+                    do{
+                        echo $b%2;
+                         $b++;
+                    }
+                    while($b<=$a);
+                    echo"<br>";
                     $a++;
-                } while ($a <= 70);
+                }
+                while($a<=5);
                 ?>
-                </h1>
             </td>
-
             <td>
-                <h1>
-                <?php
-                $a = 5;
-                do {
-                    $b = 1;
-                    do {
-                        echo $b;
-                        $b++;
-                    } while ($b <= $a);
-                    echo "<br>";
-                    $a--;
-                } while ($a >= 1);
-                ?>
-                </h1>
+
+            
+            <?php
+            $n65;
+            $a=65;
+            do{
+                $s=$a;
+                do{
+                    echo"&nbsp";
+                    $s++;
+                }
+                while($s<=69);  
+                $b=65;
+                do{
+                    echo" ".chr($b);
+                    $b++;
+                    $s++;
+                } while($b<=$a);
+                echo"<br>";
+                $a++;
+            }while($a<=70)
+            ?>
+
             </td>
-
             <td>
-                <h1>
                 <?php
-                $a = 1;
-                do {
-                    $s = $a;
-                    do {
-                        echo "&nbsp&nbsp";
+                $a=1;
+                do{
+                    $s=$a;
+                    do{
+                        echo"&nbsp";
                         $s++;
-                    } while ($s <= 5);
-                    $d = 65;
-                    do {
-                        echo "  ".chr($d);
-                        $d++;
-                        $n++;
-                    } while ($d <= $a + 64);
-                    echo "<br>";
-                    $a++;
-                } while ($a <= 5);
+                    }while($s<=5);
+                    $b=1;
+                    do{
+                      echo"*";
+                      $b++;
+                    }while($b<=$a);
+                  echo"<br>";
+                  $a++;
+                } while($a<=5);
                 ?>
-                </h1>
             </td>
-        </tr>
-
-        <tr>
             <td>
-                <h1>
                 <?php
-                $a = 1;
-                do {
-                    $s = $a;
-                    do {
-                        echo "&nbsp&nbsp";
-                        $s++;
-                    } while ($s <= 5);
-                    $d = 1;
-                    do {
-                        echo "<div></div>";
-                        $d++;
-                        $n++;
-                    } while ($d <= $a);
-                    echo "<br>";
-                    $a++;
-                } while ($a <= 5);
+                $a=5;
+                do{
+                    $b=5;
+                    do{
+                        echo"$a";
+                        $b--;
+                    }
+                    while($b>=$a);
+                     echo"<br>";
+                     $a--; 
+                }while($a>=1);
                 ?>
-                </h1>
-            </td>
-
-            <td>
-                <h1>
-                <?php
-                $a = 5;
-                do {
-                    $s = 5;
-                    do {
-                        echo $a;
-                        $s--;
-                    } while ($s >= $a);
-                    echo "<br>";
-                    $a--;
-                } while ($a >= 1);
-                ?>
-                </h1>
-            </td>
-
-            <td>
-                <h1>
-                <?php
-                $a = 1;
-                do {
-                    $b = 1;
-                    do {
-                        echo $b;
-                        $b++;
-                    } while ($b <= $a);
-                    echo "<br>";
-                    $a++;
-                } while ($a <= 5);
-
-                $a = 4;
-                do {
-                    $b = 1;
-                    do {
-                        echo $b;
-                        $b++;
-                    } while ($b <= $a);
-                    echo "<br>";
-                    $a--;
-                } while ($a >= 1);
-                ?>
-                </h1>
-            </td>
-
-            <td>
-                <h1>
-                <?php
-                $a = 1;
-                do {
-                    $s = $a;
-                    do {
-                        echo "&nbsp&nbsp";
-                        $s++;
-                    } while ($s <= 5);
-                    $d = 1;
-                    do {
-                        echo "<div></div>";
-                        $d++;
-                        $n++;
-                    } while ($d <= $a);
-                    echo "<br>";
-                    $a++;
-                } while ($a <= 5);
-
-                $a = 5;
-                do {
-                    $s = $a;
-                    do {
-                        echo "&nbsp&nbsp";
-                        $s++;
-                    } while ($s <= 5);
-                    $d = 1;
-                    do {
-                        echo "<div></div>";
-                        $d++;
-                        $n++;
-                    } while ($d <= $a);
-                    echo "<br>";
-                    $a--;
-                } while ($a >= 1);
-                ?>
-                </h1>
-            </td>
-
-            <td>
-                <h1>
-                <?php
-                $a = 5;
-                do {
-                    $b = 1;
-                    do {
-                        echo "<div></div>";
-                        $b++;
-                    } while ($b <= $a);
-                    echo "<br>";
-                    $a--;
-                } while ($a >= 1);
-
-                $a = 1;
-                do {
-                    $b = 1;
-                    do {
-                        echo "<div></div> ";
-                        $b++;
-                    } while ($b <= $a);
-                    echo "<br>";
-                    $a++;
-                } while ($a <= 5);
-                ?>
-                </h1>
             </td>
         </tr>
     </table>
