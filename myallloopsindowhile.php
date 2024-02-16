@@ -193,6 +193,100 @@
                 }while($a>=1);
                 ?>
             </td>
+            <td>
+                <?php
+                  $a=1;
+                  do{
+                    $b=1;
+                    do{
+                        echo"$b";
+                        $b++;
+                        
+                    }while($b<=$a); 
+                    echo"<br>";
+                    $a++;
+
+                  }while($a<=5);
+                  
+               $a=5;
+                  do{
+                    $b=1;
+                    do{
+                      echo"$b";
+                      $b++;
+                    }
+                    while($b<=$a);
+                      echo"<br>";
+                      $a--;
+                    
+                    
+                  }
+                  while($a>=1);
+
+                ?>
+            </td>
+            <td>
+                <?php
+                $a=1;
+                do{
+                    $s=$a;
+                    do{
+                        echo"&nbsp";
+                        $s++;
+                    }while($s<=5);
+                    $b=1;
+                    do{
+                      echo"*";
+                      $b++;
+                    }while($b<=$a);
+                  echo"<br>";
+                  $a++;
+                } while($a<=5);
+
+
+
+                $a=4;
+                do{
+                    $s=4;
+                    do{
+                         echo"&nbsp;";
+                         $s--;
+                    }while($s>=$a);
+                    $b=1;
+                    do{
+                        echo"*";
+                        $b++;
+                    }while($b<=$a);
+                     $a--;
+                     echo"<br>";                    
+                }while($a>=1);
+                ?>
+            </td>
+            <td>
+                <?php
+                $a=5;
+                do{
+                    $b=1;
+                    do{
+                        echo"*";
+                        $b++;
+                    }while($b<=$a);
+                    echo"<br>";
+                    $a--;
+                }while($a>=1);      
+                
+                $a=2;
+                do{
+                    $b=1;
+                    do{
+                        echo"*";
+                        $b++;
+                    }while($b<=$a);
+                    $a++;
+                    echo"<br>";
+                }while($a<=5);
+                ?>
+            </td>
         </tr>
     </table>
 </body>
